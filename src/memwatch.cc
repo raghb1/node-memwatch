@@ -177,7 +177,7 @@ NAN_GC_CALLBACK(memwatch::after_gc) {
         Nan::GetHeapStatistics(&hs);
 
         timeval tv;
-        gettimeofday(&tv, NULL);
+        //gettimeofday(&tv, NULL);
 
         baton->gc_ts = (tv.tv_sec * 1000000) + tv.tv_usec;
 
